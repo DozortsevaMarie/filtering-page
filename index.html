@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<title>Filter page</title>
+</head>
+<body>
+	<div class="loader">
+		<img src="https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif" alt="loading">
+	</div>
+	<section>
+		<header class="header">
+			<h2 class="header__title">Voyage company</h2>
+		</header>
+	</section>
+	<div class="main-container">
+		<div class="sorter">
+			<div class="sorter__container">
+				<button class="sorter__price">
+					<span class="sorter__title">по цене</span><i class="fas fa-angle-down"></i>
+				</button>
+			</div>	
+			<div class="sorter__container">
+				<button class="sorter__duration">
+					<span class="sorter__title">по длительности</span><i class="fas fa-angle-down"></i>	
+				</button>
+			</div>
+		</div>
+		<div class="search">
+			<input type="text" placeholder="Введите город или страну..." class="search__input">
+			<button class="search__btn">
+				<i class="fas fa-search"></i>
+			</button>
+		</div>
+		<div class="item" id="item">
+		</div>
+		<div class="filter" id="filter">
+			<div class="countries" id="countries">Выберите страну:
+				<div id="countries-container">
+				</div>
+			</div>
+			<div class="cities">Выберите город:
+				<div id="cities-container">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
